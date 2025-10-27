@@ -1,0 +1,30 @@
+$if(title)$
+\maketitle
+\vspace{-3.5em}
+\thispagestyle{empty}
+$endif$
+
+$if(short-title)$
+\ohead{$short-title$} %running header on right
+$endif$
+
+$if(abstract)$
+\begin{abstract}
+$abstract$ %
+\\
+\\
+$if(keywords)$
+\noindent%
+\textbf{Keywords:} $for(keywords)$$it$$sep$, $endfor$ %
+$endif$ 
+$if(jel)$
+\noindent%
+\textbf{JEL Classification:} $for(jel)$$it$$sep$, $endfor$
+$endif$
+\end{abstract}
+$endif$
+
+
+\newpage
+\pagenumbering{arabic}  
+\setcounter{page}{1} 

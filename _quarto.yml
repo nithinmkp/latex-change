@@ -1,0 +1,27 @@
+project:
+  type: manuscript
+  output-dir: outputs
+
+manuscript:
+  article: main.qmd
+
+format:
+     pdf: 
+       pdf-engine: xelatex
+       keep-tex: true
+       template-partials: 
+         - "partials/title.tex"
+         - "partials/before-body.tex"
+       number-sections: true
+       documentclass: scrartcl
+       classoption: abstract
+       link-citations: true
+       colorlinks: false
+       include-in-header: 
+         - partials/_include-in-header.tex
+fontsize: 12pt 
+papersize: a4
+execute:
+  freeze: true
+
+

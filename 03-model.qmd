@@ -1,0 +1,16 @@
+---
+bibliography: references.bib
+---
+
+Suppose, a generic household $h$, belonging to the geographical location $j$ calculates the minimum expenditure required to obtain a certain amount of consumption bundle by solving the following static problem in each period $t$,
+
+::: {.content-visible when-format="pdf"}
+
+\begin{mini*}|l|
+{}{e_{h, t}^j=\sum_{i=1}^{n} p_{i, t}^j c_{i, h t}^j \,; \quad h=1,2,\ldots,H; \quad j={\ rural,urban\ }}
+{}{}
+\addConstraint{c_{h,t}^j}{=}{\prod_{i=1}^{n}\left(c_{i,ht}^j\right)^{a_{i,ht}^j} \,;\quad \sum_{i=1}^{n}{\alpha_{i,ht}^j=1;\quad 0 < \alpha_{i,ht}^{j} < 1}}
+\end{mini*}
+
+:::
+

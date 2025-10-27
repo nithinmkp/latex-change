@@ -1,0 +1,21 @@
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+
+$if(author)$
+\author{
+  $for(by-author)$
+    $by-author.name.literal$%
+    $if(by-author.attributes.corresponding)$%
+      \thanks{$for(by-author.affiliations)$$it.group$, $it.department$, $it.name$$sep$, $endfor$. Corresponding author. Email: \texttt{$by-author.email$},%
+      $if(by-author.orcid)$~\href{https://orcid.org/$by-author.orcid$}{ORCID: $by-author.orcid$}$endif$}%
+    $else$%
+      \thanks{$for(by-author.affiliations)$$it.group$, $it.department$, $it.name$$sep$, $endfor$. Email: \texttt{$by-author.email$},%
+      $if(by-author.orcid)$~\href{https://orcid.org/$by-author.orcid$}{ORCID: $by-author.orcid$}$endif$}%
+    $endif$%
+    $if(by-author.separator)$$by-author.separator$ $else$\quad $endif$
+  $endfor$
+}
+$endif$
+\vspace{-2em}
+\date{$date$}

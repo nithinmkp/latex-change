@@ -1,0 +1,548 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+  a4paper,
+  abstract]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{setspace}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+% Packages %---------------
+\usepackage{hyperref}
+\usepackage[noabbrev,nameinlink,capitalise]{cleveref}
+\usepackage{float} 
+\usepackage{xpatch} 
+\usepackage{rotating}
+%\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{colortbl}
+%\usepackage{makecell}
+\usepackage{graphicx}
+\usepackage[c2]{optidef}
+\usepackage{placeins}
+\usepackage{booktabs, longtable,subcaption}
+\usepackage[flushleft]{threeparttable}
+\usepackage{tabularray}
+\usepackage[singlelinecheck=false ]{caption}
+\usepackage{etoolbox}
+\usepackage{pdflscape}
+\usepackage[automark]{scrlayer-scrpage}
+%\usepackage{amsmath}
+
+% ---------------------------------------------------
+
+% Settings --------------------------------
+
+\crefformat{equation}{equation~#2#1#3}
+\crefformat{equation}{equation~#2#1#3}
+\Crefformat{equation}{Equation~#2#1#3}
+\crefformat{figure}{figure~#2#1#3}
+\Crefformat{figure}{Figure~#2#1#3}
+\crefformat{table}{table~#2#1#3}
+\Crefformat{table}{Table~#2#1#3}
+\Crefrangeformat{table}{Tables~#3#1#4~to~#5#2#6}
+\Crefrangeformat{figure}{Figures~#3#1#4~to~#5#2#6}
+
+\Crefmultiformat{table}{Table~#2#1#3}%
+{ and~#2#1#3}% the second argument is what comes after the first reference
+{, #2#1#3}% for three or more, separator format
+{ and~#2#1#3}% for the final reference in a series
+
+\Crefmultiformat{figure}{Figure~#2#1#3}%
+{ and~#2#1#3}% the second argument is what comes after the first reference
+{, #2#1#3}% for three or more, separator format
+{ and~#2#1#3}% for the final reference in a series
+
+%\renewcommand{\theequation}{\roman{equation}}
+%\setkomafont{disposition}{\bfseries}
+%\usepackage[noblocks]{authblk}
+
+%\renewcommand*{\Authsep}{, }
+%\renewcommand*{\Authand}{, }
+%\renewcommand*{\Authands}{, }
+%\renewcommand\Affilfont{\small}
+%\setkomafont{title}{\normalfont\bfseries}
+%\makeatletter
+%\patchcmd{\@maketitle}{\titlefont\small}{\titlefont\tiny}{}{}
+%\makeatother
+%\renewcommand{\abstractwidth}{\textwidth}
+
+
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[RO,LE]{\textbf{Consumer Sentiments}}
+
+
+\clearpairofpagestyles
+%\ohead{\myshorttitle} %running header on right
+%\ihead{\myshorttitle} %running header on left
+\cfoot*{\pagemark} % Centered page number at the footer
+
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={some title},
+  pdfauthor={Nithin.M},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{some title}
+
+\author{
+      Nithin.M%
+    %
+      \thanks{Research Scholar, Department of Humanities and Social
+Sciences, IIT Kharagpur. Email: \texttt{write2nithinm@iitkgp.ac.in},%
+      ~\href{https://orcid.org/0000-0002-0939-7927}{ORCID: 0000-0002-0939-7927}}%
+    %
+    \quad 
+  }
+\vspace{-2em}
+\date{June 19, 2025}
+\begin{document}
+\maketitle
+\vspace{-3.5em}
+\thispagestyle{empty}
+
+
+
+
+\newpage
+\pagenumbering{arabic}  
+\setcounter{page}{1} 
+
+\setstretch{1.1}
+\subsection{\# Introduction}\label{introduction}
+
+\subsection{bibliography:
+references.bib}\label{bibliography-references.bib}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies
+sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius
+a, semper congue, euismod non, mi.
+
+Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non
+fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa,
+scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
+Ut in risus volutpat libero pharetra tempor.
+
+Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent
+blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque
+fermentum.
+
+some papers include Acemoglu and Scott
+(\citeproc{ref-acemoglou1994}{1994}) and also
+(\citeproc{ref-angrist_effect_1992}{Angrist and Krueger 1992};
+\citeproc{ref-carroll_does_1994}{Carroll, Fuhrer, and Wilcox 1994}). We
+also have refered to Priya and Sharma
+(\citeproc{ref-priya_sharma2024}{2024})
+
+\subsection{\# Tables}\label{tables}
+
+\subsection{bibliography:
+references.bib}\label{bibliography-references.bib-1}
+
+We collect data of household sentiments from Consumer Pyramid Household
+Survey (CPHS)\footnote{The Consumer Pyramid Household Survey (CPHS) is
+  conducted thrice every year since 2014 by the Centre for Monitoring
+  Indian Economy (CMIE). Under CPHS, a large panel of sample Indian
+  households are surveyed. This large longitudinal dataset is widely
+  acknowledged as representative of the Indian economy. For details see;
+  \url{https://consumerpyramidsdx.cmie.com/}}. It is a large
+longitudinal data set, representative of Indian economy. CPHS collects
+data of household sentiments of India since April, 2016. To collect the
+sentiment data, a generic Indian household h is surveyed thrice in a
+year, e.g.; a household surveyed in April, 2016 is surveyed again in
+August, 2016 by CPHS for the collection of the sentiments data and so
+on. To assess the sentiments, CPHS asks questions about the present
+conditions as well as the future expectations of the household financial
+position, and the business condition. In the process, to assess the
+present conditions, CPHS asks the following 2 questions to the
+households - (I) Compared to a year ago, how is your family faring
+financially these days?; and (II) Do you think that this is generally a
+good or bad times to buy things like furniture, refrigerator,
+television, two-wheeler, and car? Along with this, CPHS asks the
+following 3 questions to assess the short-run and the long-run future
+expectations of the households - (III) How do you think that a year from
+now, financially, your family would be faring?; (IV) How would you
+describe the financial and business conditions in our country in the
+next 12 months?; and (V) What do you think would be the financial and
+business conditions in our country in the next 5 years? The answer to
+questions (I), and (III) are recorded as Better, Same and Worse, and
+accordingly a numerical value, 1, 0, -1 is assigned. On the other hand,
+answers to questions (II), (IV) and (V) are recorded as Good time,
+uncertain time and Bad time, and accordingly a numerical value, 1, 0 and
+-1 is assigned to the answer.
+
+Along with sentiments, we also collect data of household's monthly
+expenditure on 8 major food groups, and fuel \& lighting from CPHS from
+April 2016. The 8 major food groups include - (1) cereals; (2) oils and
+fats; (3) fruits; (4) pulses and products; and (5) milk and milk
+products; (6) meat, fish and egg; (7) vegetables and spices; and (8)
+sweets and snacks. Along with the above mentioned 8 food groups, we also
+collect data on household expenditure share for food \& fuel. We find
+that the 8 food groups and the fuel and lightning contribute almost 92\%
+of the expenditure for the Indian households. {\Cref{tbl-desc}} reports
+the descriptive statistics of the data collected from CPHS\footnote{The
+  lower panel of {\Cref{tbl-desc}} shows the impact of Covid-19 on
+  household sentiments. The significant rise in the proportion of
+  pessimistic households, and the corresponding decline in the
+  proportion of optimistic households as depicted in the lower panel of
+  {\Cref{tbl-desc}} shows the negative impact of the Covid-19 on the
+  psyche of Indian households. By using the difference of the optimistic
+  households and the pessimistic households, we calculate the balance
+  statistics to give a graphical representation of the pessimistic
+  impact of Covid-19 on the psyche of Indian households. For details,
+  see \textbf{?@fig-ics} and the discussion in \textbf{?@sec-4}.}. Using
+this data, and by using the methodology described below, we calculate
+two types of expenditure minimizing consumption bundles for the Indian
+households -- (i) food bundle: consisting of the 8 food groups mentioned
+above; and (ii) food \& fuel bundle: consisting of the fuel \& lighting
+along with the 8 food groups mentioned above.
+
+\begin{table}
+
+\caption{\label{tbl-desc}Descriptive Statistics}
+
+\centering{
+
+    \centering
+     % Overall table caption
+    
+
+    \small % Reduce font size
+
+    % Subtable 1 caption
+    \caption*{(a): Demographic Variables} 
+
+    % First Subtable: Table 1(a)
+    \begin{subtable}{\textwidth}
+    \label{tbl-des_a}
+        \centering
+        \renewcommand{\arraystretch}{0.9}
+        \begin{tabular}{p{5cm} c}
+            \toprule
+            \textbf{Variable} & \textbf{Mean/Proportion} \\
+            \midrule
+            Income & 19,834.12 \\
+            Age & 46.34 \\
+            \addlinespace
+            \textbf{Education} & \\
+            \quad Less than 5 & 27.5 \\
+            \quad 5-10 & 56.4 \\
+            \quad 10-12 & 8.7 \\
+            \quad 13-15 & 7.0 \\
+            \quad 15+ & 0.4 \\
+            \addlinespace
+            \textbf{Gender} & \\
+            \quad Male & 88 \\
+            \quad Female & 12 \\
+            \addlinespace
+            \textbf{Marital Status} & \\
+            \quad Married & 85 \\
+            \quad Unmarried & 15 \\
+            \addlinespace
+            \textbf{Geographic Location} & \\
+            \quad Rural & 25 \\
+            \quad Urban & 75 \\
+            \addlinespace
+            \textbf{Occupation} & \\
+            \quad Agriculture and Allied & 15.4 \\
+            \quad Manufacturing, Industry and Auto & 34.1 \\
+            \quad Services, Media, Health & 50.3 \\
+            \quad Others & 0.2 \\
+            \bottomrule
+        \end{tabular}
+        \label{tbl-desc-a}
+    \end{subtable}
+
+    \vspace{1.5em} % Add some vertical space between subtables
+
+    % Subtable 2 caption
+    \caption*{(b): Sentiment Variables} 
+
+    % Second Subtable: Table 1(b)
+    \begin{subtable}{\textwidth}
+    \label{tbl-des_b}
+        \centering
+        \renewcommand{\arraystretch}{0.9}
+        \begin{tabular}{p{3cm} p{2cm} c c c c c c}
+            \toprule
+            \textbf{Variable} & \textbf{Response} & \multicolumn{2}{c}{\textbf{Full Sample}} & \multicolumn{2}{c}{\textbf{Pre-Covid Periods}} & \multicolumn{2}{c}{\textbf{Covid Periods}} \\
+            \cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+            & & \textbf{N} & \textbf{\%} & \textbf{N} & \textbf{\%} & \textbf{N} & \textbf{\%} \\
+            \midrule
+            QFP & Bad & 12,610 & 21.4 & 5,097 & 12.9 & 7,513 & 38.8 \\
+                & Same & 34,245 & 58.2 & 24,010 & 60.8 & 10,235 & 52.9 \\
+                & Good & 12,016 & 20.4 & 10,407 & 26.3 & 1,609 & 8.3 \\
+            \addlinespace
+            QBC & Bad & 13,671 & 23.2 & 5,544 & 14.0 & 8,127 & 42.0 \\
+                & Same & 30,628 & 52.0 & 20,894 & 52.9 & 9,734 & 50.3 \\
+                & Good & 14,572 & 24.8 & 13,076 & 33.1 & 1,496 & 7.7 \\
+            \midrule
+            \multicolumn{2}{l}{Total N} & 58,871 & & 39,514 & & 19,357 & \\
+            \bottomrule
+        \end{tabular}
+        \label{tbl-desc-b}
+    \end{subtable}
+
+}
+
+\end{table}%
+
+\FloatBarrier
+
+Along with this, we also collect data on the price index of the
+aforementioned eight food groups, as well as fuel and lighting, from
+MoSPI\footnote{See; \href{https://mospi.gov.in/}{mospi.gov.in} for the
+  data of price index.}. MoSPI directly reports the price index for the
+first five food groups---(1) to (5) listed above. However, it separately
+provides the price index for the following food items:(i) Meat and fish
+(ii) Egg (iii) Vegetables (iv) Spices (v) Sweets (vi) Snacks. Using the
+price indices of these food items and their corresponding weights, we
+calculate the monthly price index for the remaining three food
+groups:(6) Meat, fish, and eggs (7) Vegetables and spices (8) Sweets and
+snacks
+
+\subsection{\# Model}\label{model}
+
+\subsection{bibliography:
+references.bib}\label{bibliography-references.bib-2}
+
+Suppose, a generic household \(h\), belonging to the geographical
+location \(j\) calculates the minimum expenditure required to obtain a
+certain amount of consumption bundle by solving the following static
+problem in each period \(t\),
+
+\begin{mini*}|l|
+{}{e_{h, t}^j=\sum_{i=1}^{n} p_{i, t}^j c_{i, h t}^j \,; \quad h=1,2,\ldots,H; \quad j={\ rural,urban\ }}
+{}{}
+\addConstraint{c_{h,t}^j}{=}{\prod_{i=1}^{n}\left(c_{i,ht}^j\right)^{a_{i,ht}^j} \,;\quad \sum_{i=1}^{n}{\alpha_{i,ht}^j=1;\quad 0 < \alpha_{i,ht}^{j} < 1}}
+\end{mini*}
+
+\section{Figures}\label{figures}
+
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-4.pdf}
+\FloatBarrier
+
+we refer to \textbf{?@fig-mean\_educ} for the cross-sectional
+heterogeneity of average aggregate inflation rate, and household
+specific inflation rate - households classified in terms of educational
+attainment of household head.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-acemoglou1994}
+Acemoglu, Daron, and Andrew Scott. 1994. {``Consumer Confidence and
+Rational Expectations: Are Agents' Beliefs Consistent with the
+Theory?''} \emph{The Economic Journal} 104 (422): 1--19.
+\url{http://www.jstor.org/stable/2234671}.
+
+\bibitem[\citeproctext]{ref-angrist_effect_1992}
+Angrist, Joshua D., and Alan B. Krueger. 1992. {``The {Effect} of {Age}
+at {School} {Entry} on {Educational} {Attainment}: {An} {Application} of
+{Instrumental} {Variables} with {Moments} from {Two} {Samples}.''}
+\emph{Journal of the American Statistical Association} 87 (418):
+328--36. \url{https://doi.org/10.1080/01621459.1992.10475212}.
+
+\bibitem[\citeproctext]{ref-carroll_does_1994}
+Carroll, Christopher D., Jeffrey C. Fuhrer, and David W. Wilcox. 1994.
+{``Does {Consumer} {Sentiment} {Forecast} {Household} {Spending}? {If}
+{So}, {Why}?''} \emph{The American Economic Review} 84 (5): 1397--1408.
+\url{http://www.jstor.org/stable/2117779}.
+
+\bibitem[\citeproctext]{ref-priya_sharma2024}
+Priya, Pragati, and Chandan Sharma. 2024. {``On Transmission Channels of
+Energy Prices and Monetary Policy Shocks to Household Consumption:
+Evidence from India.''} \emph{Energy Economics} 136: 107723.
+https://doi.org/\url{https://doi.org/10.1016/j.eneco.2024.107723}.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}
