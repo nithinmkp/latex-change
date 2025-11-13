@@ -2,4 +2,5 @@
 ![Cross-sectional Heterogeneity of Average Aggregate Inflation Rate, and Household Specific Inflation Rate - Households Classified in terms of Educational Attainment of Household Head](images/fig-4.pdf){#fig-mean_educ height=150%}
 \FloatBarrier
 :::
+
 we refer to @fig-mean_educ for the cross-sectional heterogeneity of average aggregate inflation rate, and household specific inflation rate - households classified in terms of educational attainment of household head.
