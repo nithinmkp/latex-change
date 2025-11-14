@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.6)  14 NOV 2025 06:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.6)  14 NOV 2025 19:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,8 +289,6 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2024/12/12 v3.2 microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3053.
-) (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
 ) (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 \LTleft=\skip69
@@ -310,7 +308,7 @@ Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 \c@LT@chunks=\count290
 \LT@p@ftn=\toks27
 )
-Class scrartcl Info: longtable captions redefined on input line 70.
+Class scrartcl Info: longtable captions redefined on input line 69.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen153
@@ -718,39 +716,39 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 )) (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
 Package: xurl 2022/01/09 v 0.10 modify URL breaks
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 279.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 268.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 279.
-LaTeX Font Info:    ... okay on input line 279.
-Package scrbase Info: activating english \abstractname on input line 279.
-Package scrbase Info: activating english \partname on input line 279.
-Package scrbase Info: activating english \figurename on input line 279.
-Package scrbase Info: activating english \tablename on input line 279.
-Package scrbase Info: activating english \contentsname on input line 279.
-Package scrbase Info: activating english \listfigurename on input line 279.
-Package scrbase Info: activating english \listtablename on input line 279.
-Package scrbase Info: activating english \refname on input line 279.
-Package scrbase Info: activating english \indexname on input line 279.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+Package scrbase Info: activating english \abstractname on input line 268.
+Package scrbase Info: activating english \partname on input line 268.
+Package scrbase Info: activating english \figurename on input line 268.
+Package scrbase Info: activating english \tablename on input line 268.
+Package scrbase Info: activating english \contentsname on input line 268.
+Package scrbase Info: activating english \listfigurename on input line 268.
+Package scrbase Info: activating english \listtablename on input line 268.
+Package scrbase Info: activating english \refname on input line 268.
+Package scrbase Info: activating english \indexname on input line 268.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count343
@@ -770,20 +768,20 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 279.
-Package microtype Info: Applying patch `item' on input line 279.
-Package microtype Info: Applying patch `toc' on input line 279.
-Package microtype Info: Applying patch `eqnum' on input line 279.
-Package microtype Info: Applying patch `footnote' on input line 279.
-Package microtype Info: Applying patch `verbatim' on input line 279.
-LaTeX Info: Redefining \microtypesetup on input line 279.
+LaTeX Info: Redefining \microtypecontext on input line 268.
+Package microtype Info: Applying patch `item' on input line 268.
+Package microtype Info: Applying patch `toc' on input line 268.
+Package microtype Info: Applying patch `eqnum' on input line 268.
+Package microtype Info: Applying patch `footnote' on input line 268.
+Package microtype Info: Applying patch `verbatim' on input line 268.
+LaTeX Info: Redefining \microtypesetup on input line 268.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 279.
+LaTeX Info: Redefining \showhyphens on input line 268.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -795,14 +793,14 @@ Package footnotehyper Info: Using the \@makefntext{} approach (see doc).
 (footnotehyper)    try sending the author a small illustrative document.
 (footnotehyper)    To turn off this message, add \footnotehyperwarnfalse
 (footnotehyper)    to the preamble.
-Package hyperref Info: Link coloring OFF on input line 279.
+Package hyperref Info: Link coloring OFF on input line 268.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/ninecolors\ninecolors.sty
 Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 )
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 281.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 270.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -810,73 +808,69 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 281.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 270.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 281.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 270.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 281.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 270.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 281.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 270.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 281.
+(Font)              <17.28> on input line 270.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 281.
+(Font)              <12> on input line 270.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 281.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 281.
+(Font)              <10> on input line 270.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 270.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 281.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 270.
  (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 281.
- (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 281.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 281.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 281.
- (C:\Users\Nithin M\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+
+LaTeX Warning: No \author given.
+
+
 
 [1
 
 
-{C:/Users/Nithin M/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+{C:/Users/Nithin M/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 320.
+(Font)              <8> on input line 308.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 320.
+(Font)              <6> on input line 308.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 313.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 313.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.350 
-       [1]
+l.339 A
+       long with sentiments, we also collect data of household's monthly [1]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 397.
+(Font)              <10.95> on input line 384.
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--425
+Underfull \hbox (badness 10000) in paragraph at lines 412--412
 []| \T1/lmr/m/n/10.95 (+20) Man-u-fac-tur-ing, In-dus-try
  []
 
@@ -886,41 +880,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--425
 
 [3]
 
-pdfTeX warning: pdflatex (file ./images/fig-4.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/fig-4.pdf, id=53, 1300.86pt x 1084.05pt>
-File: images/fig-4.pdf Graphic file (type pdf)
-<use images/fig-4.pdf>
-Package pdftex.def Info: images/fig-4.pdf  used on input line 494.
-(pdftex.def)             Requested size: 1300.85684pt x 1084.04736pt.
-
-Overfull \hbox (11.7412pt too wide) in paragraph at lines 494--495
-[] 
- []
-
-
-
-[4{C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
-
-[5 <./images/fig-4.pdf>]
-
-[6] (main.aux)
+[4] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 24787 strings out of 473536
- 491713 string characters out of 5713469
- 1072320 words of memory out of 5000000
- 47485 multiletter control sequences out of 15000+600000
- 642243 words of font info for 169 fonts, out of 8000000 for 9000
+ 24611 strings out of 473536
+ 488199 string characters out of 5713469
+ 1071610 words of memory out of 5000000
+ 47349 multiletter control sequences out of 15000+600000
+ 637551 words of font info for 157 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,20n,107p,10963b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (7 pages, 355336 bytes).
+ 108i,21n,107p,10963b,618s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on main.pdf (5 pages, 200237 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 49198 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 43025 words of extra memory for PDF output out of 51595 (max. 10000000)
 

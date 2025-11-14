@@ -30,7 +30,6 @@
   \usepackage[]{microtype}
   \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage{setspace}
 \makeatletter
 \@ifundefined{KOMAClassName}{% if non-KOMA class
   \IfFileExists{parskip.sty}{%
@@ -258,24 +257,14 @@
 \urlstyle{same}
 \hypersetup{
   pdftitle={some title},
-  pdfauthor={Nithin.M},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 
 \title{some title}
 
-\author{
-      Nithin.M%
-    %
-      \thanks{Research Scholar, Department of Humanities and Social
-Sciences, IIT Kharagpur. Email: \texttt{write2nithinm@iitkgp.ac.in},%
-      ~\href{https://orcid.org/0000-0002-0939-7927}{ORCID: 0000-0002-0939-7927}}%
-    %
-    \quad 
-  }
 \vspace{-2em}
-\date{June 19, 2025}
+\date{}
 \begin{document}
 \maketitle
 \vspace{-3.5em}
@@ -288,7 +277,6 @@ Sciences, IIT Kharagpur. Email: \texttt{write2nithinm@iitkgp.ac.in},%
 \pagenumbering{arabic}  
 \setcounter{page}{1} 
 
-\setstretch{1.1}
 \section{Introduction}\label{introduction}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
@@ -357,22 +345,21 @@ sweets and snacks. Along with the above mentioned 8 food groups, we also
 collect data on household expenditure share for food \& fuel. We find
 that the 8 food groups and the fuel and lightning contribute almost 92\%
 of the expenditure for the Indian households. {\Cref{tbl-desc}} reports
-the descriptive statistics of the data collected from CPHS\footnote{The
-  lower panel of {\Cref{tbl-desc}} shows the impact of Covid-19 on
-  household sentiments. The significant rise in the proportion of
-  pessimistic households, and the corresponding decline in the
-  proportion of optimistic households as depicted in the lower panel of
-  {\Cref{tbl-desc}} shows the negative impact of the Covid-19 on the
-  psyche of Indian households. By using the difference of the optimistic
-  households and the pessimistic households, we calculate the balance
-  statistics to give a graphical representation of the pessimistic
-  impact of Covid-19 on the psyche of Indian households. For details,
-  see and the discussion in Section~\ref{sec-4}.}. Using this data, and
-by using the methodology described below, we calculate two types of
-expenditure minimizing consumption bundles for the Indian households --
-(i) food bundle: consisting of the 8 food groups mentioned above; and
-(ii) food \& fuel bundle: consisting of the fuel \& lighting along with
-the 8 food groups mentioned above.
+the descriptive statistics of the data collected from CPHS\^{}{[}The
+lower panel of {\Cref{tbl-desc}} shows the impact of Covid-19 on
+household sentiments. The significant rise in the proportion of
+pessimistic households, and the corresponding decline in the proportion
+of optimistic households as depicted in the lower panel of
+{\Cref{tbl-desc}} shows the negative impact of the Covid-19 on the
+psyche of Indian households. By using the difference of the optimistic
+households and the pessimistic households, we calculate the balance
+statistics to give a graphical representation of the pessimistic impact
+of Covid-19 on the psyche of Indian households. For details, see and the
+discussion in Using this data, and by using the methodology described
+below, we calculate two types of expenditure minimizing consumption
+bundles for the Indian households -- (i) food bundle: consisting of the
+8 food groups mentioned above; and (ii) food \& fuel bundle: consisting
+of the fuel \& lighting along with the 8 food groups mentioned above.
 
 \begin{table}
 
@@ -475,32 +462,6 @@ price indices of these food items and their corresponding weights, we
 calculate the monthly price index for the remaining three food
 groups:(6) Meat, fish, and eggs (7) Vegetables and spices (8) Sweets and
 snacks
-
-\section{Model}\label{model}
-
-Suppose, a generic household \(h\), belonging to the geographical
-location \(j\) calculates the minimum expenditure required to obtain a
-certain amount of consumption bundle by solving the following static
-problem in each period \(t\),
-
-\begin{mini*}|l|
-{}{e_{h, t}^j=\sum_{i=1}^{n} p_{i, t}^j c_{i, h t}^j \,; \quad h=1,2,\ldots,H; \quad j={\ rural,urban\ }}
-{}{}
-\addConstraint{c_{h,t}^j}{=}{\prod_{i=1}^{n}\left(c_{i,ht}^j\right)^{a_{i,ht}^j} \,;\quad \sum_{i=1}^{n}{\alpha_{i,ht}^j=1;\quad 0 < \alpha_{i,ht}^{j} < 1}}
-\end{mini*}
-
-\section{Figures}\label{sec-4}
-
-\pandocbounded{\includegraphics[keepaspectratio]{images/fig-4.pdf}}
-\FloatBarrier
-
-we refer to \textbf{?@fig-mean} for the cross-sectional heterogeneity of
-average aggregate inflation rate, and household specific inflation rate
-- households classified in terms of educational attainment of household
-head.
-
-\section*{References}\label{references}
-\addcontentsline{toc}{section}{References}
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}

@@ -1,18 +1,5 @@
 ---
 title: "some title"
-author: 
-  - name: Nithin.M
-    orcid: 0000-0002-0939-7927
-    affiliations:
-      - id: kgp
-        number: 1
-        name: IIT Kharagpur
-        department: Department of Humanities and Social Sciences
-        group: Research Scholar
-    email: write2nithinm@iitkgp.ac.in
-date: "2025-06-19"
-date-format: long
-linestretch: 1.1
 
 ---
 
@@ -24,14 +11,5 @@ linestretch: 1.1
 
 {{< include 02-tables.qmd >}}
 
-# Model
 
-{{< include 03-model.qmd >}}
 
-# Figures {#sec-4}
-
-{{< include 04-figures.qmd >}}
-
-# References {.unnumbered}
-::: {#refs}
-:::

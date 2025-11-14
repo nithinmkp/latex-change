@@ -9,4 +9,4 @@
 \FloatBarrier
 :::
 
-we refer to @fig-mean for the cross-sectional heterogeneity of average aggregate inflation rate, and household specific inflation rate - households classified in terms of educational attainment of household head.
+we refer to [fig @fig-mean] for the cross-sectional heterogeneity of average aggregate inflation rate, and household specific inflation rate - households classified in terms of educational attainment of household head.
