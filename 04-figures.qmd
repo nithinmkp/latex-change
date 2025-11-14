@@ -1,5 +1,11 @@
 ::: {.content-visible when-format="pdf"}
+
 ![Cross-sectional Heterogeneity of Average Aggregate Inflation Rate, and Household Specific Inflation Rate - Households Classified in terms of Educational Attainment of Household Head](images/fig-4.pdf){#fig-mean}
+
+<!-- 
+![Cross-sectional Heterogeneity of Average Aggregate Inflation Rate, and Household Specific Inflation Rate - Households Classified in terms of Educational Attainment of Household Head](images/fig-4.pdf){#fig-mean height = "150%"}
+ -->
+ 
 \FloatBarrier
 :::
 

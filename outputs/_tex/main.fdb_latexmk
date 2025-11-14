@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1763080920.80155 "d:/quarto tesing/latex-change/outputs/_tex/main.tex" "main.pdf" "main" 1763080926.35388 0
+["pdflatex"] 1763083633.64447 "d:/quarto tesing/latex-change/outputs/_tex/main.tex" "main.pdf" "main" 1763083641.1178 0
   "C:/Users/Nithin" 1745981094 19000 ebe304d7bdcfbd1a1e83f44adece0818 ""
   "C:/Users/Nithin M/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760755610 1574613 590d34a69fbfb2adae183d25302d2245 ""
   "C:/Users/Nithin M/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741221613 12014880 5db3ef33722d1b8ce94ed1bcae409e7f ""
@@ -182,10 +182,10 @@
   "C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/tex/latex/xifthen/xifthen.sty" 1448274436 5689 1bfa68243e89a54479e7d0580773c57e ""
   "C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/Nithin M/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "d:/quarto tesing/latex-change/outputs/_tex/main.tex" 1763080897 19267 94f1baa32e709a68496dc519e9358e53 ""
+  "d:/quarto tesing/latex-change/outputs/_tex/main.tex" 1763083609 19248 7233acba47722103606bbc15f71eea6f ""
   "images/fig-4.pdf" 1743646501 44200 4150abfcb8ccf01c344e993a09d28d69 ""
-  "main.aux" 1763080925 3462 1e5104f1df531539653cbc545397ebd1 "pdflatex"
-  "main.tex" 1763080897 19267 94f1baa32e709a68496dc519e9358e53 ""
+  "main.aux" 1763083640 3462 1e5104f1df531539653cbc545397ebd1 "pdflatex"
+  "main.tex" 1763083609 19248 7233acba47722103606bbc15f71eea6f ""
   (generated)
   "main.aux"
   "main.log"
