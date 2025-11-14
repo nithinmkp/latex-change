@@ -22,5 +22,5 @@ fontsize: 12pt
 papersize: a4
 execute:
   freeze: true
-
+bibliography: references.bib
 

@@ -10,7 +10,6 @@ author:
         department: Department of Humanities and Social Sciences
         group: Research Scholar
     email: write2nithinm@iitkgp.ac.in
-bibliography: references.bib
 date: "2025-06-19"
 date-format: long
 linestretch: 1.1
@@ -18,15 +17,19 @@ linestretch: 1.1
 ---
 
 # Introduction 
+
 {{< include 01-intro.qmd >}}
 
 # Tables
+
 {{< include 02-tables.qmd >}}
 
 # Model
+
 {{< include 03-model.qmd >}}
 
-# Figures
+# Figures {#sec-4}
+
 {{< include 04-figures.qmd >}}
 
 # References {.unnumbered}

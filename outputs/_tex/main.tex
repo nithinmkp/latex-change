@@ -289,10 +289,7 @@ Sciences, IIT Kharagpur. Email: \texttt{write2nithinm@iitkgp.ac.in},%
 \setcounter{page}{1} 
 
 \setstretch{1.1}
-\subsection{\# Introduction}\label{introduction}
-
-\subsection{bibliography:
-references.bib}\label{bibliography-references.bib}
+\section{Introduction}\label{introduction}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
 Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies
@@ -317,10 +314,7 @@ some papers include Acemoglu and Scott
 also have refered to Priya and Sharma
 (\citeproc{ref-priya_sharma2024}{2024})
 
-\subsection{\# Tables}\label{tables}
-
-\subsection{bibliography:
-references.bib}\label{bibliography-references.bib-1}
+\section{Tables}\label{tables}
 
 We collect data of household sentiments from Consumer Pyramid Household
 Survey (CPHS)\footnote{The Consumer Pyramid Household Survey (CPHS) is
@@ -373,12 +367,12 @@ the descriptive statistics of the data collected from CPHS\footnote{The
   households and the pessimistic households, we calculate the balance
   statistics to give a graphical representation of the pessimistic
   impact of Covid-19 on the psyche of Indian households. For details,
-  see \textbf{?@fig-ics} and the discussion in \textbf{?@sec-4}.}. Using
-this data, and by using the methodology described below, we calculate
-two types of expenditure minimizing consumption bundles for the Indian
-households -- (i) food bundle: consisting of the 8 food groups mentioned
-above; and (ii) food \& fuel bundle: consisting of the fuel \& lighting
-along with the 8 food groups mentioned above.
+  see \textbf{?@fig-ics} and the discussion in Section~\ref{sec-4}.}.
+Using this data, and by using the methodology described below, we
+calculate two types of expenditure minimizing consumption bundles for
+the Indian households -- (i) food bundle: consisting of the 8 food
+groups mentioned above; and (ii) food \& fuel bundle: consisting of the
+fuel \& lighting along with the 8 food groups mentioned above.
 
 \begin{table}
 
@@ -397,7 +391,7 @@ along with the 8 food groups mentioned above.
 
     % First Subtable: Table 1(a)
     \begin{subtable}{\textwidth}
-    \label{tbl-des_a}
+    \label{tbl-des-a}
         \centering
         \renewcommand{\arraystretch}{0.9}
         \begin{tabular}{p{5cm} c}
@@ -433,7 +427,6 @@ along with the 8 food groups mentioned above.
             \quad Others & 0.2 \\
             \bottomrule
         \end{tabular}
-        \label{tbl-desc-a}
     \end{subtable}
 
     \vspace{1.5em} % Add some vertical space between subtables
@@ -463,7 +456,6 @@ along with the 8 food groups mentioned above.
             \multicolumn{2}{l}{Total N} & 58,871 & & 39,514 & & 19,357 & \\
             \bottomrule
         \end{tabular}
-        \label{tbl-desc-b}
     \end{subtable}
 
 }
@@ -484,10 +476,7 @@ calculate the monthly price index for the remaining three food
 groups:(6) Meat, fish, and eggs (7) Vegetables and spices (8) Sweets and
 snacks
 
-\subsection{\# Model}\label{model}
-
-\subsection{bibliography:
-references.bib}\label{bibliography-references.bib-2}
+\section{Model}\label{model}
 
 Suppose, a generic household \(h\), belonging to the geographical
 location \(j\) calculates the minimum expenditure required to obtain a
@@ -500,15 +489,15 @@ problem in each period \(t\),
 \addConstraint{c_{h,t}^j}{=}{\prod_{i=1}^{n}\left(c_{i,ht}^j\right)^{a_{i,ht}^j} \,;\quad \sum_{i=1}^{n}{\alpha_{i,ht}^j=1;\quad 0 < \alpha_{i,ht}^{j} < 1}}
 \end{mini*}
 
-\section{Figures}\label{figures}
+\section{Figures}\label{sec-4}
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-4.pdf}
+\pandocbounded{\includegraphics[keepaspectratio]{images/fig-4.pdf}}
 \FloatBarrier
 
-we refer to \textbf{?@fig-mean\_educ} for the cross-sectional
-heterogeneity of average aggregate inflation rate, and household
-specific inflation rate - households classified in terms of educational
-attainment of household head.
+we refer to \textbf{?@fig-mean} for the cross-sectional heterogeneity of
+average aggregate inflation rate, and household specific inflation rate
+- households classified in terms of educational attainment of household
+head.
 
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}

@@ -22,7 +22,7 @@ Along with sentiments, we also collect data of household's monthly expenditure o
 
     % First Subtable: Table 1(a)
     \begin{subtable}{\textwidth}
-    \label{tbl-des_a}
+    \label{tbl-des-a}
         \centering
         \renewcommand{\arraystretch}{0.9}
         \begin{tabular}{p{5cm} c}
@@ -58,7 +58,6 @@ Along with sentiments, we also collect data of household's monthly expenditure o
             \quad Others & 0.2 \\
             \bottomrule
         \end{tabular}
-        \label{tbl-desc-a}
     \end{subtable}
 
     \vspace{1.5em} % Add some vertical space between subtables
@@ -88,7 +87,6 @@ Along with sentiments, we also collect data of household's monthly expenditure o
             \multicolumn{2}{l}{Total N} & 58,871 & & 39,514 & & 19,357 & \\
             \bottomrule
         \end{tabular}
-        \label{tbl-desc-b}
     \end{subtable}
 
 \end{table}
